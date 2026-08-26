@@ -12,7 +12,7 @@ requires-python = ">=3.11"
 dependencies = [
     "process-bigraph>=1.0",
     "bigraph-schema>=1.0",
-    "pbg-superpowers",
+    "viva-superpowers",
     "readdy>=2.0",
     "numpy",
     "pyyaml",
@@ -26,7 +26,7 @@ dev = [
 ]
 
 [tool.uv.sources]
-pbg-superpowers = { git = "https://github.com/vivarium-collective/pbg-superpowers.git", branch = "main" }
+viva-superpowers = { git = "https://github.com/vivarium-collective/viva-superpowers.git", branch = "main" }
 
 [tool.setuptools.packages.find]
 include = ["pbg_readdy*"]
