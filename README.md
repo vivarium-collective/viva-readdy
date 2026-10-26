@@ -1,8 +1,8 @@
-# pbg-readdy
+# viva-readdy
 
 Process-bigraph wrapper for [ReaDDy](https://readdy.github.io), a particle-based reaction-diffusion simulator.
 
-**[View Interactive Demo Report](https://vivarium-collective.github.io/pbg-readdy/)**  -- actin filament treadmilling, Lotka-Volterra predator-prey, growing polymers, and phase separation with 3D viewers, Plotly charts, and bigraph architecture diagrams.
+**[View Interactive Demo Report](https://vivarium-collective.github.io/viva-readdy/)**  -- actin filament treadmilling, Lotka-Volterra predator-prey, growing polymers, and phase separation with 3D viewers, Plotly charts, and bigraph architecture diagrams.
 
 Wraps ReaDDy's Brownian dynamics engine as a `process-bigraph` Process, enabling particle-based reaction-diffusion simulations to be composed with other biological models in the vivarium framework.
 
