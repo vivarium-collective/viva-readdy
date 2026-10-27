@@ -107,10 +107,18 @@ class ReaDDyProcess(Process):
     }
 
     def __init__(self, config=None, core=None):
+        # Capture complex keys before super().__init__() applies schema
+        # processing, which strips config keys not declared in config_schema.
+        _saved = {}
+        if config:
+            for key in self._COMPLEX_DEFAULTS:
+                if key in config:
+                    _saved[key] = config[key]
         super().__init__(config=config, core=core)
+        # Restore complex fields: use saved value from config if available,
+        # otherwise fall back to the class-level default.
         for key, default in self._COMPLEX_DEFAULTS.items():
-            if key not in self.config:
-                self.config[key] = default
+            self.config[key] = _saved.get(key, default)
         self._system = None
         self._simulation = None
         self._species_list = None
