@@ -1,7 +1,6 @@
 {
   "mode": "snapshot",
-  "smsApiBase": "",
   "repo": "https://github.com/vivarium-collective/viva-readdy",
-  "commit": "dcf5ee23b62dfb15d2e5f8238340acd2fe9a60f5",
+  "commit": "683d063f5f5fbdb6550e53226ab621239259c6a6",
   "generated_from_ref": "main"
 }
